@@ -1,13 +1,14 @@
 :root{
-  --bg1:#ff6ec7; /* pink */
-  --bg2:#89f3ff; /* hellblau */
-  --card-bg: rgba(255,255,255,0.06);
-  --glass-border: rgba(255,255,255,0.12);
-  --accent: rgba(255,255,255,0.9);
-  --glass-blur: 10px;
-  --radius:16px;
-  --shadow: 0 8px 30px rgba(8,6,20,0.5);
-  --glass-outline: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  --bg1:#ff4fb0; /* gedämpfteres Pink */
+  --bg2:#69d6ea; /* gedämpfteres Hellblau */
+  --bg-dark-overlay: rgba(6,10,18,0.65); /* dunkler Overlay für mehr Kontrast */
+  --card-bg: rgba(6,10,18,0.55);
+  --glass-border: rgba(255,255,255,0.06);
+  --accent: #e6f9ff; /* helle Akzentfarbe für Lesbarkeit */
+  --muted: rgba(230,249,255,0.75);
+  --glass-blur: 12px;
+  --radius:14px;
+  --shadow: 0 10px 30px rgba(0,0,0,0.6);
 }
 
 *{box-sizing:border-box}
