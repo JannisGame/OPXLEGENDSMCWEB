@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Server Bewerbung — Dein Minecraft Server</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="bg-anim" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="logo">
+      <div class="logo-icon">MC</div>
+      <h1 class="logo-title">DeinServer</h1>
+    </div>
+    <nav class="nav">
+      <a href="#about">Über</a>
+      <a href="#bewerben">Bewerben</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="hero" class="card hero-card">
+      <div class="hero-left">
+        <h2 class="eyebrow">Join the Team</h2>
+        <h3 class="hero-title">Werde Teil unseres Minecraft‑Servers</h3>
+        <p class="hero-sub">Moderatorteam, Builder, Entwickler — zeig uns, warum gerade du perfekt passt.</p>
+        <a class="btn btn-primary" href="#bewerben">Jetzt Bewerben</a>
+      </div>
+      <div class="hero-right">
+        <div class="server-stats">
+          <div><strong>IP</strong><span>play.deinserver.net</span></div>
+          <div><strong>Spieler</strong><span>online 24/7</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="card">
+      <h4>Über den Server</h4>
+      <p>Kurzbeschreibung: Game‑Mode, Community, Events, Besonderheiten. Passe das hier an.</p>
+    </section>
+
+    <section id="bewerben" class="card form-card">
+      <h4>Bewerbung</h4>
+      <p class="muted">Fülle das Formular vollständig aus. Wir melden uns per E‑Mail.</p>
+
+      <form id="applyForm" novalidate>
+        <div class="grid">
+          <label>
+            Anzeigename
+            <input type="text" name="displayName" required minlength="3" />
+          </label>
+          <label>
+            Minecraft‑Name
+            <input type="text" name="mcName" required pattern="^[A-Za-z0-9_]{2,16}$" />
+          </label>
+          <label>
+            Alter
+            <input type="number" name="age" min="13" max="120" required />
+          </label>
+          <label>
+            Rolle
+            <select name="role" required>
+              <option value="">Wähle...</option>
+              <option>Moderator</option>
+              <option>Builder</option>
+              <option>Developer</option>
+              <option>Event‑Team</option>
+            </select>
+          </label>
+          <label class="full">
+            Warum sollen wir dich nehmen?
+            <textarea name="motivation" required minlength="20" rows="5"></textarea>
+          </label>
+          <label>
+            Discord Tag
+            <input type="text" name="discord" placeholder="Name#1234" />
+          </label>
+          <label>
+            E‑Mail
+            <input type="email" name="email" required />
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <label class="checkbox">
+            <input type="checkbox" name="rules" required /> Ich habe die Regeln gelesen und akzeptiere sie
+          </label>
+          <div class="actions-right">
+            <button type="reset" class="btn btn-ghost">Zurücksetzen</button>
+            <button type="submit" class="btn btn-primary glow">Bewerbung Abschicken</button>
+          </div>
+        </div>
+
+        <div id="formMsg" role="status" aria-live="polite"></div>
+      </form>
+
+      <p class="privacy small">Hinweis: Wir speichern deine Daten nur für Bewerbungszwecke. Passe den Text an deine Datenschutzregeln an.</p>
+    </section>
+
+    <section id="faq" class="card">
+      <h4>FAQ</h4>
+      <ul>
+        <li>Wie lange dauert die Antwort? — Normalerweise 3–7 Tage.</li>
+        <li>Muss ich Discord haben? — Ja, für Interviews nutzen wir Discord.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> DeinServer</span>
+    <div class="footer-links">
+      <a href="#impressum">Impressum</a>
+      <a href="#privacy">Datenschutzerklärung</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
