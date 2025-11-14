@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bewerbung – Minecraft Server | Datenschutz</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Minecraft Server – Bewerbung</h1>
+      <p class="subtitle">Reibungslos bewerben. Transparent informiert.</p>
+    </div>
+  </header>
+
+    <nav class="topnav">
+      <div class="container">
+        <a href="#bewerbung">Bewerbung</a>
+        <a href="#datenschutz">Datenschutz</a>
+      </div>
+    </nav>
+
+  <main class="container grid">
+    <!-- Bewerbungsbereich -->
+    <section id="bewerbung" class="card">
+      <h2>Bewerbungsformular</h2>
+      <p class="hint">Bitte fülle alle Felder korrekt aus. Mit Absenden bestätigst du die Hinweise in der Datenschutz-Erklärung.</p>
+
+      <form action="#" method="post" class="form">
+        <fieldset class="fieldset">
+          <legend>Persönliche Daten</legend>
+
+          <label for="spielername"><span>Spielername (IGN)</span>
+            <input type="text" id="spielername" name="spielername" required />
+          </label>
+
+          <label for="discord"><span>Discord-Tag</span>
+            <input type="text" id="discord" name="discord" placeholder="Name#1234" required />
+          </label>
+
+          <label for="email"><span>E-Mail</span>
+            <input type="email" id="email" name="email" required />
+          </label>
+
+          <label for="alter"><span>Alter</span>
+            <input type="number" id="alter" name="alter" min="13" max="45" required />
+          </label>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>Serverrelevante Infos</legend>
+
+          <label for="erfahrung"><span>Erfahrung / Rollen</span>
+            <select id="erfahrung" name="erfahrung" required>
+              <option value="" disabled selected>Bitte auswählen</option>
+              <option>Builder</option>
+              <option>Moderator</option>
+              <option>Developer (Plugins)</option>
+              <option>Support</option>
+              <option>Roleplay</option>
+              <option>Andere</option>
+            </select>
+          </label>
+
+          <label for="onlinezeiten"><span>Online-Zeiten</span>
+            <input type="text" id="onlinezeiten" name="onlinezeiten" placeholder="z.B. Mo–Fr 12–23 Uhr, Sa/So variabel" />
+          </label>
+
+          <label for="motivation"><span>Motivation</span>
+            <textarea id="motivation" name="motivation" rows="5" placeholder="Warum willst du auf unseren Server? Was bringst du mit?" required></textarea>
+          </label>
+
+          <label for="referenzen"><span>Referenzen (Links)</span>
+            <textarea id="referenzen" name="referenzen" rows="3" placeholder="Portfolio, GitHub, Screenshots, frühere Server …"></textarea>
+          </label>
+        </fieldset>
+
+        <div class="consent">
+          <label class="checkbox">
+            <input type="checkbox" id="zustimmung" name="zustimmung" required />
+            <span>Ich habe die <a href="#datenschutz">Datenschutz-Erklärung</a> gelesen und stimme der Verarbeitung zu.</span>
+          </label>
+        </div>
+
+        <button type="submit" class="button-primary">Bewerbung absenden</button>
+        <p class="small">Hinweis: Dieses Formular speichert keine Daten serverseitig, solange keine echte Verarbeitung eingerichtet ist.</p>
+      </form>
+    </section>
+
+    <!-- Datenschutzbereich im klassischen Stil -->
+    <aside id="datenschutz" class="card legal">
+      <h2>Datenschutz-Erklärung</h2>
+
+      <p class="legal-subtitle">Stand: 14. November 2025</p>
+
+      <h3>1. Verantwortlicher</h3>
+      <p><strong>Serverbetreiber:</strong> Opxlegends (z.B. “OPX RP”)<br>
+      <strong>Kontakt:</strong> E-Mail: kontakt@deinserver.de / Discord: @DeinTeam<br>
+
+      <h3>2. Zweck und Rechtsgrundlagen der Verarbeitung</h3>
+      <p>Wir verarbeiten die im Bewerbungsformular angegebenen Daten (IGN, Discord, E-Mail, Alter, Erfahrung, Motivation, Referenzen) zur Prüfung deiner Bewerbung und zur Kontaktaufnahme. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen) sowie ggf. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem geordneten Bewerbungsprozess). Bei ausdrücklicher Einwilligung stützen wir uns zusätzlich auf Art. 6 Abs. 1 lit. a DSGVO.</p>
+
+      <h3>3. Kategorien der Daten</h3>
+      <p>Identifikationsdaten (IGN, Discord, E-Mail), Altersangabe, Erfahrungsprofil, Freitextangaben (Motivation, Referenzen), freiwillige Nachweise (Links, Medien).</p>
+
+      <h3>4. Empfänger</h3>
+      <p>Deine Daten werden ausschließlich innerhalb des Server-Teams verarbeitet. Eine Weitergabe an Dritte erfolgt nur, wenn dies für die Auswahl erforderlich ist oder gesetzliche Verpflichtungen bestehen.</p>
+
+      <h3>5. Speicherfrist</h3>
+      <p>Bewerbungsdaten werden regulär nach Abschluss des Auswahlverfahrens gelöscht, spätestens nach 6 Monaten, sofern keine gesetzliche Aufbewahrungspflicht besteht oder du einer längeren Speicherung zustimmst.</p>
+
+      <h3>6. Rechte der Betroffenen</h3>
+      <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Widerspruch (Art. 15–21 DSGVO). Bitte kontaktiere uns über die oben genannten Kanäle.</p>
+
+      <h3>7. Freiwilligkeit und Einwilligung</h3>
+      <p>Die Angaben sind für die Bewerbung erforderlich. Soweit du freiwillige Informationen bereitstellst, verarbeiten wir diese auf Basis deiner Einwilligung, die du jederzeit widerrufen kannst, ohne dass die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung berührt wird.</p>
+
+      <h3>8. Hosting und Logdaten</h3>
+      <p>Wenn die Seite über GitHub Pages oder ähnliche Dienste gehostet wird, können technisch notwendige Logdaten (z.B. IP-Adresse, Zeitpunkt, User-Agent) zur Bereitstellung und Sicherheit anfallen. Diese werden nur zweckgebunden genutzt.</p>
+
+      <h3>9. Sicherheit</h3>
+      <p>Wir setzen angemessene technische und organisatorische Maßnahmen ein, um deine Daten gegen Verlust, Missbrauch und unbefugten Zugriff zu schützen.</p>
+
+      <h3>10. Kontakt für Datenschutz-Fragen</h3>
+      <p>Bei Fragen zur Verarbeitung deiner Daten wende dich an: datenschutz@deinserver.de</p>
+
+      <hr>
+
+      <p class="note">Dieser Text ist ein allgemeines Muster und ersetzt keine Rechtsberatung. Bitte passe ihn an deinen tatsächlichen Prozess, dein Hosting und deine Kontaktinformationen an.</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Opxlegends. Alle Rechte vorbehalten.</p>
+      <p><a href="#datenschutz">Datenschutz</a> · <a href="#bewerbung">Bewerbung</a> · <a href="#" aria-disabled="true" tabindex="-1">Impressum (bald)</a></p>
+    </div>
+  </footer>
+</body>
+</html>
